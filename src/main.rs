@@ -1,8 +1,13 @@
-use advent_of_code_2021::day1::Day1;
-use advent_of_code_2021::solution::run;
+use advent_of_code_2021::run;
+use advent_of_code_2021::Day1;
+use advent_of_code_2021::Day2;
 
 fn main() {
-    let day_1 = Day1;
+    let day = 2;
 
-    run(day_1);
+    match day {
+        1 => run(Day1),
+        2 => run(Day2),
+        _ => panic!(),
+    };
 }

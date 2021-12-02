@@ -1,9 +1,9 @@
-use crate::solution::Solution;
+use crate::utils::Solution;
 use std::fs;
 
 pub struct Day1;
 
-impl Solution for Day1 {
+impl Solution<i32> for Day1 {
     fn read_input(&self) -> std::vec::Vec<i32> {
         let filename = "src/day1_input.txt";
 
